@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'fastapi_routesmanager'
+version = "0.0.1"
+license = {text = "MIT License"}
+authors = [
+  { name="SirPaulO", email="me@sirpauloliver.com" },
+]
+dependencies = [
+    "fastapi>=0.95.2",
+]
+keywords = ["fastapi", "routes", "request", "middleware"]
+description = 'Package to manipulate requests before FastAPI processes them, and responses once finished.'
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/SirPaulO/fastapi_routesmanager"
+"Bug Tracker" = "https://github.com/SirPaulO/fastapi_routesmanager/issues"
+"Repository" = "https://github.com/SirPaulO/fastapi_routesmanager.git"
