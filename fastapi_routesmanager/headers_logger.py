@@ -1,4 +1,4 @@
-from fastapi_routesmanager.routes_manager import RouteManager
+from .routes_manager import RouteManager
 import logging
 from starlette.requests import Request
 from starlette.responses import Response
