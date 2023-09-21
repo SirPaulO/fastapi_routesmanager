@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = 'fastapi_routesmanager'
-version = "0.0.1"
+version = "0.0.2"
 license = {text = "MIT License"}
 authors = [
   { name="SirPaulO", email="me@sirpauloliver.com" },
@@ -12,8 +12,8 @@ authors = [
 dependencies = [
     "fastapi>=0.95.2",
 ]
-keywords = ["fastapi", "routes", "request", "middleware"]
-description = 'Package to manipulate requests before FastAPI processes them, and responses once finished.'
+keywords = ["fastapi", "middleware", "router", "routes", "request", "response", "api"]
+description = 'Manipulate requests before FastAPI processes them, and responses once finished.'
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [

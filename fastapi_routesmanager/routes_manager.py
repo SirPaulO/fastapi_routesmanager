@@ -1,3 +1,4 @@
+import inspect
 from abc import ABC, abstractmethod
 from typing import Any, Callable, List, Type, Coroutine
 
@@ -51,7 +52,8 @@ class ManagedRoute(APIRoute):
 
             if len(remaining_managers) > 0:
                 manager_class = remaining_managers.pop()
-                manager_instance = manager_class()
+                # Instantiate if it's not
+                manager_instance = manager_class() if inspect.isclass(manager_class) else manager_class
                 return await manager_instance.run(request, custom_route_handler, remaining_managers)
             else:
                 return await original_route_handler(request)
